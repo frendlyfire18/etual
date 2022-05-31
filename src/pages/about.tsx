@@ -217,7 +217,7 @@ function WithLargeQuote() {
 
 export default function WithBackgroundImage() {
     return (
-        <Main>
+        <Main isShowInput={true}>
             <Head>
                 <title>О нас</title>
             </Head>

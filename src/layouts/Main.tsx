@@ -9,11 +9,15 @@ const Main =(props)=> {
     return (
         <>
             <Nav/>
-            <Center py={2}>
-                <Box width={{md:"55%",base:"100%"}}>
-                    <FindInput/>
-                </Box>
-            </Center>
+            {
+                !props.isShowInput
+                &&
+                <Center py={2}>
+                    <Box width={{md:"55%",base:"100%"}}>
+                        <FindInput/>
+                    </Box>
+                </Center>
+                }
             {props.children}
             <Footer/>
         </>
