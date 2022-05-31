@@ -1,0 +1,17 @@
+query GetAllProducts($brand:String,$country:String,$forWho:String,$priceRange:Float,$secondRange:Float){
+  getProducts(brand:$brand,country:$country,forWho:$forWho,priceRange:$priceRange,secondRange:$secondRange){
+    records{
+            _id
+            name
+            sku
+            price
+            image
+            value
+            forWho
+            madeCountry
+            brand
+            brandDesc
+    }
+    hasMore
+  }
+}
